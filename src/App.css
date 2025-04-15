@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff5f6d, #ffc3a0);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.app {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ff5f6d;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #ffc3a0;
+}
+
+.section {
+  margin: 80px 0;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ff5f6d;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.skill-badge {
+  display: inline-block;
+  background: #1e1e1e;
+  color: #ff5f6d;
+  padding: 10px 15px;
+  margin: 8px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.project-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.contact-info a {
+  color: #ff5f6d;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.contact-info a:hover {
+  color: #ffc3a0;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .section h2 {
+    font-size: 28px;
+  }
+}
+/* Updated hero section with background */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, rgba(255, 95, 109, 0.6), rgba(255, 195, 160, 0.6)), url('/path/to/your/background.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+ 
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.project-card {
+  background: #1e1e1e;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.skill-badge {
+  background: #ff5f6d;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.project-card ul {
+  display: flex;
+  gap: 8px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-card a {
+  color: #ff5f6d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.project-links a {
+  color: #ff5f6d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.project-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.project-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.skill-badge {
+  background: #ff5f6d;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.skill-badge:hover {
+  transform: scale(1.1);
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+.typing-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff5f6d;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-right: 3px solid #ff5f6d;
+  width: 100%;
+  animation: typing 3s steps(22) 1s forwards, blink 0.6s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
