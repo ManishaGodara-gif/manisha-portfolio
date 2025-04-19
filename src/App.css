@@ -267,3 +267,64 @@ body {
 @keyframes blink {
   50% { border-color: transparent; }
 }
+
+.section {
+  padding: 50px 20px;
+  background: linear-gradient(to bottom right, #ff7e5f, #feb47b); /* Beautiful soft gradient */
+  color: white;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: white;
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 10px;
+}
+
+.timeline {
+  position: relative;
+  margin: 40px 0 20px 20px;
+  border-left: 3px solid white;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: -9px;
+  top: 5px;
+  border: 2px solid #ff6f61;
+}
+
+.timeline-content {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  backdrop-filter: blur(8px);
+}
+
+.list {
+  margin-left: 30px;
+  list-style-type: disc;
+  font-size: 1.1rem;
+}
